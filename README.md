@@ -102,8 +102,7 @@ python3 ~/.claude/skills/dida-task/scripts/dida.py health
 
 ## 参考
 
-- [malinkang/tomato2notion](https://github.com/malinkang/tomato2notion) — `scripts/tomato.py` 里同时使用了 `/batch/check/0` 读取全量任务、`/project/all/completedInAll` 分页读取已完成任务，以及 `/pomodoros/timeline` 同步番茄记录；本 skill 的私有 API 读取思路主要参考了这些端点组合。
-- [leolulu/dida365-api](https://github.com/leolulu/dida365-api) — Python 版 Dida365 私有 API 客户端，使用 `/batch/check/0` 拉取服务端同步数据，并封装了已完成任务读取逻辑。
+- [malinkang/tomato2notion](https://github.com/malinkang/tomato2notion) — 本 skill 的 Dida365 私有 API 读取思路参考自该项目。其 `scripts/tomato.py` 使用 `/batch/check/0` 读取全量任务、`/project/all/completedInAll` 分页读取已完成任务，并通过 `/pomodoros/timeline` 同步番茄记录。
 
 ## License
 
