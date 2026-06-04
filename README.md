@@ -102,7 +102,8 @@ python3 ~/.claude/skills/dida-task/scripts/dida.py health
 
 ## 参考
 
-- [vex-glitch/TickAL-TickTick-Alfred-Workflow](https://github.com/vex-glitch/TickAL-TickTick-Alfred-Workflow) — 该 Alfred workflow 说明 TickTick Open API 不暴露已完成任务；它在完成任务前将任务快照写入本地 `completed_tasks` cache，再通过 `completed_list.py` 从缓存展示已完成任务。本 skill 对“官方 OpenAPI 缺少已完成任务读取能力”的判断受其启发，但当前实现改用 Dida365 私有 API 读取真实已完成任务。
+- [malinkang/tomato2notion](https://github.com/malinkang/tomato2notion) — `scripts/tomato.py` 里同时使用了 `/batch/check/0` 读取全量任务、`/project/all/completedInAll` 分页读取已完成任务，以及 `/pomodoros/timeline` 同步番茄记录；本 skill 的私有 API 读取思路主要参考了这些端点组合。
+- [leolulu/dida365-api](https://github.com/leolulu/dida365-api) — Python 版 Dida365 私有 API 客户端，使用 `/batch/check/0` 拉取服务端同步数据，并封装了已完成任务读取逻辑。
 
 ## License
 
