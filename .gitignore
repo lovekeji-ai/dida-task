@@ -1,0 +1,39 @@
+# Local agent/project notes
+CLAUDE.md
+
+# Secrets and local configuration
+credentials.json
+.env
+.env.*
+!.env.example
+
+# Python cache/runtime files
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+
+# Test, coverage, and build artifacts
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
