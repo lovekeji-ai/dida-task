@@ -100,6 +100,10 @@ python3 ~/.claude/skills/dida-task/scripts/dida.py health
 - [examples/usage.md](examples/usage.md) — 常见用法示例
 - [api-reference.md](api-reference.md) — 官方 + 私有 API 端点速查
 
+## 参考
+
+- [vex-glitch/TickAL-TickTick-Alfred-Workflow](https://github.com/vex-glitch/TickAL-TickTick-Alfred-Workflow) — 该 Alfred workflow 说明 TickTick Open API 不暴露已完成任务；它在完成任务前将任务快照写入本地 `completed_tasks` cache，再通过 `completed_list.py` 从缓存展示已完成任务。本 skill 对“官方 OpenAPI 缺少已完成任务读取能力”的判断受其启发，但当前实现改用 Dida365 私有 API 读取真实已完成任务。
+
 ## License
 
 MIT
